@@ -44,3 +44,5 @@ worker-2   Ready    <none>   40m   v1.17.2
     - After you create the cluster, you can only perform steps 2 and 3 whenever you want to run it. 
     - To login any node you can run this command: `vagrant ssh [NODE_NAME]`.
 
+> After creating the cluster apply the Weave network
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"

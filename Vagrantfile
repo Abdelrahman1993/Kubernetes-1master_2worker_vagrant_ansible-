@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
 
             node.vm.provider "virtualbox" do |vb|
                 vb.name = "worker-#{i}"
-                vb.memory = 1024
+                vb.memory = 1536
                 vb.cpus = 2
             end
             node.vm.box = "bento/ubuntu-16.04"
